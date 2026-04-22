@@ -31,9 +31,8 @@ jobs:
         id: garmin-tokens
         with:
           path: ~/.garmin_tokens
-          key: garmin-tokens-${{ github.run_id }}
-          restore-keys: |
-            garmin-tokens-
+          key: garmin-tokens
+          restore-keys: garmin-tokens
 
       - name: Install dependencies
         run: |
